@@ -1,0 +1,10 @@
+#demo about Arithmetic operators
+x=int(input("enter a value"))
+y=int(input("enter a value"))
+print("sum: ",x+y)
+print("substraction: ",x-y)
+print("multiplication: ",x*y)
+print("division: ",x/y)
+print("floor division result: ",x//y)
+print("remainder: ",x%y)
+print("exp result: ",x**y)
