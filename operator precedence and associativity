@@ -1,0 +1,6 @@
+#what is operator precedence and associativity
+print(10+5-5) #when u have same precedence of operators exist in an expression
+              #left to right associavity is followed
+print(1+2*3-4/2)
+print(10+14*4**2)
+print(2+5<<10)
