@@ -1,0 +1,90 @@
+#for loop example----
+
+#write a p p to print 10 natural numbers
+for k  in range(10):
+    print(k)
+
+
+#write a p p to print roll num btw 501 to 610
+for k  in range(501,561):
+    print(k,end=" ") # to display numbers in horizontal way we use (end=" ")
+
+# write a p p using a range display numbers with skipping value 1
+#ex: 1 3 5 7 9
+for k in range(1,11,2):
+    print(k, end=" ")
+
+#w p p to print sequence of numbers with skipping value 3 using for loop and range
+#input:1 - 20
+for k in range(1,21,4):
+    print(k, end=" ")
+
+#w p p  to print welcome mess age 10 times using for loop
+for l in range(10):
+     print("welcome")
+
+ #w p p to display each charecter from the string using for
+name="jashwanth"
+for s in name :
+    print(s,end=" ")
+print("\n")
+
+#write a p p to read and print each element from the list using for loop
+list_of_student_names=["nani", "reddy", "prasad", "varma"]
+for l in list_of_student_names:
+    print(l,end="")
+
+#w p p to read "balu" from the list and print
+list_of_student_names=["nani", "reddy", "prasad"]
+for l in list_of_student_names:
+    if(l=="nani"):
+        print("name:",l)
+    else:
+        print("no name")
+
+#w p p to read "balu" from the list and print
+list_names=["name","reddy","prasad","balu"]
+for n in list_names:
+    if(n=="balu"):
+        print("hey")
+    else:
+        print("get lost")
+
+#--------------------------------------------------------
+print("\n")
+#w p p to print even numbers form given list
+list1=[501,502,503,504,78,34,64,342,235,234]
+for i in list1:
+    if (i % 2 == 0):
+        print("even: ",i)
+    else:
+        print("odd: ", i)
+
+#write a python program to calculate avg salary about all salaries
+#using for loop
+list_of_salaries=[50000,60000,45000,35000,89000,32000,5000,6000]
+total_sal= 0
+for k in list_of_salaries:
+    total_sal += k
+print(total_sal/len(list_of_salaries))
+
+
+#write a python program to calculate
+    # total orders of items from the online app
+products_prices=[56.3,489.50,78.65,50.00,102.00]
+total_orders = 0
+for k in products_prices:
+    total_orders += k
+print(total_orders)
+from functools import total_ordering
+
+# write a python program usisg for loop to
+# calculate interest for multiple customers at bank
+bank_balances = [5000, 6000, 7000, 9000, 10000]
+rate_of_interest = 0.5
+total_interest = 0
+for balance in bank_balances:
+    interest = balance * rate_of_interest
+    total_interest += interest
+    print("Total Interest Earned:", total_interest)
+    print("Interest earned on balance {balance}: {interest}")
