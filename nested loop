@@ -1,0 +1,55 @@
+'''  3.nested loops:
+occurence of one loop statment with in another loop statement
+  SYNTAX:
+        for i in object:
+           body in outer loopw
+           for  i in object:
+           body of inner loop
+when to apply nested loops : when the data or info is hold in the form of 2d data means matrix data
+--to track outer loop to maintain rows
+-- to track columns, to maintain  inner loop'''
+
+
+# .write a python program to display avalable colours and sizes of the products in a ecommers application
+#using nested loops concepts
+#requirments is :
+#create list of colours such as red blue green
+#create a list to hold sizes like small medium large
+#use nested loops to generate all the possible combinations of colurs
+#associated with sizes for user to select appropriate product
+'''colours=["red", "green", "blue"]
+sizes=["small", "medium", "large"]
+for row in colours:
+    for col in sizes:
+        print(f"colour: {row},sizes : {col}")
+        '''
+################################################################
+
+#NESTED LOOP FOR MATRIX ADDITION
+'''
+x=[[1,2,3],
+   [4,5,6],
+   [7,8,9]]
+y=[[9,8,7],
+   [6,5,4],
+   [3,2,1]]
+res=[[0,0,0],
+     [0,0,0],
+     [0,0,0]]
+#nexted outer loop for rows track
+for i in range(len(x)):
+    #to track columns we need inner loop
+   for j in range(len(x[0])):
+       #weite logic to perform addition
+    res[i][j]=x[i][j] + y[i][j]
+#to display resultant matrix we need one for loop
+for z in res:
+    print(z)'''
+
+#w p p to print multiplication table from 2 ro 10 using nested loop
+'''for i in range (2, 11):
+    print(f"\nmultiplication table for {i}:")
+    for j in range (1, 11):
+        print(f"{i} * {j} = {i*j}")'''
+
+
