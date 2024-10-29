@@ -1,0 +1,57 @@
+'''
+ 2.while loop:-
+      is also Iterative or repetition statement
+       to solve infinite/finite related problems
+
+    SYNTAX:
+    initialization_of_interation_variable
+    while(condition):
+    body of while
+    pre/post iteration veriable
+
+   ex:infinate problems
+    bank ATM
+    CAMERA
+    ANTI VIRUS
+    EARTHQUAKE APPLICATION
+    ETC
+
+# w p p using while loop to print natural numbers from 1 to 50
+i=1
+n=50
+while(i<=n):
+    print("natural numbers:\n",n)
+    i+=1
+
+#w p p  to execute body of while infinite times
+while(true):
+    print("welcome ",end=" ")
+
+#w p p to find sum of n numbers usimg while loop
+n = 10
+i = 0
+while i<=n:
+    sum = sum+i
+    i=i+1
+print("sum of n number: ",sum)'''
+
+'''#w p p  find to find factorial of given number using for and while loop
+n = 5
+j=1
+fact=1
+while(j<=n):
+    fact=fact*j
+    j=j+1
+print("factorial of n number: ", fact)'''
+#-------------------------------------------------------
+print("\n")
+#w p p  using while loop for bank atm pin count attempt
+'''business rules:
+  1 create temparary password
+  2 ask password to be enter dynamically
+  3 if th input is incorrect,notify them of remaining attempts
+  4 if input is correct grant access
+  5 if they fail after 3 attempts lock the account'''
+password = 1234
+
+
