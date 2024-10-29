@@ -1,0 +1,50 @@
+'''3.
+Special statements
+break:TO break out of the loop
+
+continue: Continue statment enable to execute body of loop even through certain abnormal conditions occurs
+
+pass: pass statnment is enabling to create empty or abstact statment
+
+return: return statement is used in functions to send back compuited resultant value to calling function or program'''
+
+
+
+#break statment example fake note detection
+list_of_series=[1111, 1112, 1113, 1114, 1115, 1116, 1121, 1122, 1117, 1118]
+fake_notes=[1121,1122]
+for i in list_of_series:
+    if i == 1121 or i==1122:
+        print("fake note funded")
+        break
+    print(i)
+
+#continue  statment example fake note detection
+list_of_series=[1111, 1112, 1113, 1114, 1115, 1116, 1121, 1122, 1117, 1118]
+fake_notes=[1121,1122]
+for i in list_of_series:
+    if i == 1121 or i==1122:
+        print("fake note funded")
+        continue
+    print(i)
+
+#pass statnment
+#create abstrat or empty class
+class smatr_watch:
+    pass
+
+class drone:
+    pass
+
+#create abstract or empty method/function
+def man_csn_fly(p1, p2, p3, pn):
+    pass
+def bike_can_fly(p1, p2, p3, pn):
+    pass
+
+#create abstract or empty loop
+while(10<5):
+    pass
+
+
+
