@@ -1,0 +1,23 @@
+from weather_app import fetch_weather
+from weather_app import analyze_weather
+
+# Fetch weather data for multiple cities
+city_list = ["New York", "London", "Mumbai", "Paris"]
+weather_data = {city: fetch_weather.get_current_weather(city) for city in city_list}
+
+# Display weather data
+for city, data in weather_data.items():
+    print(f"{city}: {data['temperature']}°C, {data['condition']}")
+
+# Calculate the average temperature
+average_temp = analyze_weather.calculate_average_temperature(weather_data)
+if average_temp is not None:
+    print(f"\nAverage Temperature: {average_temp:.2f}°C")
+else:
+    print("\nNo valid temperature data to calculate average.")
+
+# Analyze weather trends for a specific city
+city = "New York"
+city_weather_data = weather_data[city]
+trend_message = analyze_weather.check_weather_trend(city_weather_data)
+print(f"\nWeather trend for {city}: {trend_message}")
