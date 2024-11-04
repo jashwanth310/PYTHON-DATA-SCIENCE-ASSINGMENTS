@@ -1,0 +1,5 @@
+from OCT_BATCH.CONTRACT import contract_bonus as ce
+sal=32000
+ce.emp_details()
+ce.emp_bonus_details(sal)
+ce.emp_total_nos()
