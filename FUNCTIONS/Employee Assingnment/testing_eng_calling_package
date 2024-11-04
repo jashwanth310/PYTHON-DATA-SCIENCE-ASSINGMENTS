@@ -1,0 +1,7 @@
+from OCT_BATCH.EMP import emp_bonus
+
+#through module name followed by function name we can call function
+basic_sal=18000
+emp_bonus.emp_bonus_details(basic_sal)
+emp_bonus.emp_details()
+emp_bonus.emp_total_no()
